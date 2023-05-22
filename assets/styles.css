@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  text-decoration: none;
+  font-family: Luminari, fantasy serif;
+  scroll-behavior: smooth;
+  border: none;
+  outline: none;
+}
+
+:root {
+  --bg-color: #00201E;
+  --second-bg-color: #3a5268;
+  --text-color: #007f5f;
+  --main-color:  #00e88a;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.header {
+  background-color: var(--second-bg-color);
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 3rem;
+  color: var(--main-color);
+}
+
+.navbar {
+  overflow: hidden;
+  color: var(--main-color);
+  font-family: Arial;
+  display: flex;
+}
+
+.navbar a {
+  float: left;
+  color: var(--main-color);
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.sounds-dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a green background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn, .navbar a.active {
+  color: var(--main-color);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  border-radius: 2rem;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
