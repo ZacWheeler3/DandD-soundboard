@@ -1,17 +1,22 @@
+@font-face {
+  font-family: 'Moria';
+  src: url(/fonts/moria-citadel.regular.ttf)
+}
+
 * {
   margin: 0;
   text-decoration: none;
-  font-family: Luminari, fantasy serif;
+  font-family: 'Moria';
   scroll-behavior: smooth;
   border: none;
   outline: none;
 }
 
 :root {
-  --bg-color: #00201E;
-  --second-bg-color: #3a5268;
-  --text-color: #007f5f;
-  --main-color:  #00e88a;
+  --bg-color: #4f4736;
+  --second-bg-color: #74674e;
+  --text-color: #5db6b4;
+  --main-color:  #FFD700;
 }
 
 html {
@@ -30,10 +35,12 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  
+  
 }
 
 .logo {
-  font-size: 3rem;
+  font-size: 3.4rem;
   color: var(--main-color);
 }
 
@@ -48,7 +55,7 @@ body {
   float: left;
   color: var(--main-color);
   font-size: 16px;
-  color: white;
+  color:var(--text-color);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -65,14 +72,14 @@ body {
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
+  color:var(--text-color);
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
-/* Add a green background color to navbar links on hover */
+
 .navbar a:hover,
 .dropdown:hover .dropbtn, .navbar a.active {
   color: var(--main-color);
@@ -101,10 +108,42 @@ body {
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.64);
+  padding: 7rem;
+  
+}
+
+.home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content h1 {
+  color: blue;
+  font-size: 2rem;
+}
+
+.dropdown-combat-content .combatbtn {
+  display: none;
+  /* Additional styles for positioning and appearance */
+}
+
+.dropdown-combat-content.show .combatbtn {
+  display: block;
+}
+
+

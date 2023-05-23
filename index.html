@@ -7,18 +7,21 @@
     <title>D&D soundboard</title>
 
     <link rel="stylesheet" href="assets/styles.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
       <a href="#" class="logo">Dank Dungeon Sounds</a>
       <!--Navbar section-->
       <nav class="navbar">
-        <a href="#home" class="active"> Home <i class='bx bxs-castle'></i></a>
+        <a href="#home" class="active"> Home <i class="bx bxs-castle"></i></a>
         <div class="dropdown">
           <button class="dropbtn">
             Sounds
-            <i class='bx bx-bullseye'></i>
+            <i class="bx bx-bullseye"></i>
           </button>
           <div class="dropdown-content">
             <a href="#">Combat</a>
@@ -27,40 +30,44 @@
             <a href="#">Animals</a>
           </div>
         </div>
-        <a href="#portfolio"><i class='bx bxs-crown'></i>About</a>
-        <a href="#contact"><i class='bx bxs-megaphone'></i>Contact</a>
+        <a href="#portfolio">About <i class="bx bxs-crown"></i></a>
+        <a href="#contact">Contact <i class="bx bxs-megaphone"></i></a>
       </nav>
     </header>
     <!--Home section-->
     <section class="home" id="home">
       <div class="home-content">
-        <h3>Welcome weary traveler's...</h3>
-        <h3>to...</h3>
-        <h1>Dank Dungeon Sounds!</h1>
-        <p>Please take a seat and gather around the fire with us.</p>
+        <h1>Welcome weary traveler's to <span>Dank Dungeon Sounds!</span> <h1>
+          
       </div>
     </section>
     <!--Sounds Section-->
     <section class="sounds" id="sounds">
-      <div class="sounds-content">
+      <!--Combat sounds section-->
+      <h1>Combat Sounds</h1>
+      <div class="combatsounds-content">
         <audio
           src="DND audio/mixkit-drums-of-war-call-2780.wav"
           id="war drums"
         ></audio>
+        <audio src="DND audio/sword-draw.mp3" id="sword drawn"></audio>
+      </div>
+      <div class="sounds-content">
         <audio
           src="DND audio/distant-village-meadows-ambience-loop.mp3"
           id="village ambience"
         ></audio>
-        <audio src="DND audio/sword-draw.mp3" id="sword drawn"></audio>
         <audio src="DND audio/insects-night-forest-30s.mp3" id="bugs"></audio>
         <audio
           src="DND audio/undead-agressive-vampire.mp3"
           id="vampire"
         ></audio>
+
         <audio
           src="DND audio/morning-ambience-near-meadows-and-forest-loop.mp3"
           id="morning ambience"
         ></audio>
+        <img src="https://www.transparentpng.com/thumb/sword/g3oYmj-sword-picture.png" alt="sword picture @transparentpng.com">
 
         <div id="buttons"></div>
       </div>
