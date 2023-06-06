@@ -41,6 +41,7 @@ body {
 
 .logo {
   font-size: 3.4rem;
+  margin: 1rem 3rem;
   color: var(--main-color);
 }
 
@@ -145,5 +146,25 @@ body {
 .dropdown-combat-content.show .combatbtn {
   display: block;
 }
+
+.funny-sounds {
+padding: 5rem;
+  display: flex;
+  justify-content: left;
+  background-color: red;
+  font-size: 4rem;
+}
+
+.funnysounds-content {
+  text-decoration: none;
+flex-direction: column;
+
+
+padding: 15rem;
+
+width: 100%;
+
+}
+
 
 

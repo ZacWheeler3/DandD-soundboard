@@ -5,6 +5,7 @@ const sounds = [
   "bugs",
   "vampire",
   "morning ambience",
+  
 ];
 
 sounds.forEach((sound) => {
@@ -14,19 +15,23 @@ sounds.forEach((sound) => {
   btn.innerText = sound;
 
   btn.addEventListener("click", () => {
-    stopSongs();   
+    stopSongs();
     document.getElementById(sound).play();
   });
 
-  document.getElementById("buttons").appendChild(btn);
+  const listItem = document.createElement("li");
+  listItem.appendChild(btn);
+
+  document.getElementById("audio-list").appendChild(listItem);
 });
 
 function stopSongs() {
   sounds.forEach((sound) => {
     const song = document.getElementById(sound);
 
-    song.pause();
-    song.currentTime = 0;
+    if (song) {
+      song.pause();
+      song.currentTime = 0;
+    }
   });
 }
-
